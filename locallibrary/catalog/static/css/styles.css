@@ -2,4 +2,27 @@
   margin-top: 20px;
   padding: 0;
   list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large; 
+}
+
+.col-sm-2 {
+  background-color:lightpink;
+}
+
+.col-sm-10 {
+  background-color:floralwhite;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+a {
+  color: cornsilk;
+  text-decoration:underline;
+  text-decoration-style: dotted;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration:underline;
 }
