@@ -3,3 +3,9 @@ Virtual Environment
 
 Database
 *.sqlite3
+
+__pycache__/
+*.pyc
+*.pyo
+
+.DS_Store
