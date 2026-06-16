@@ -16,13 +16,23 @@
   font-size: larger;
 }
 
-a {
+.sidebar-nav a {
   color: cornsilk;
   text-decoration:underline;
   text-decoration-style: dotted;
 }
 
-a:hover {
+.sidebar-nav a:hover {
   color: hotpink;
   text-decoration:underline;
+}
+
+.col-sm-10 a {
+  color:hotpink;
+  text-decoration: none;
+}
+
+.col-sm-10 a:hover {
+  color:deeppink;
+  text-decoration: underline;
 }
