@@ -36,3 +36,9 @@
   color:deeppink;
   text-decoration: underline;
 }
+
+.col-sm-10 .pagination {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
