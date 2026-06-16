@@ -8,13 +8,12 @@ def index(request):
     """View function for home page of site."""
     
     # Generate counts of some of the main objects
-    num_books = Book.objects.all().count()
-    num_instances = BookInstance.objects.all().count()
+    num_books = Book.objects.count()
+    num_instances = BookInstance.objects.count()
     
     # Available books (status = 'a')
     num_instances_available = BookInstance.objects.filter(status__exact='a').count()
     
-    # The 'all()' is implied by default
     num_authors = Author.objects.count()
 
     num_genres = Genre.objects.count()
@@ -52,3 +51,9 @@ class BookListView(generic.ListView):
 
 class BookDetailView(generic.DetailView):
     model = Book
+
+class AuthorListView(generic.ListView):
+    model = Author
+
+class AuthorDetailView(generic.DetailView):
+    model = Author
