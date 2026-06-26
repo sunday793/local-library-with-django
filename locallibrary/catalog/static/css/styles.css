@@ -1,3 +1,7 @@
+html, body {
+  background-color: floralwhite;
+}
+
 .sidebar-nav {
   margin-top: 20px;
   padding: 0;
@@ -8,6 +12,8 @@
 
 .col-sm-2 {
   background-color:lightpink;
+  min-height: 100vh !important;
+  padding-left: 20px; /* Отступ для текста меню от края */
 }
 
 .col-sm-10 {
