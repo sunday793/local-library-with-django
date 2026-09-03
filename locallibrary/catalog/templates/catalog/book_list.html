@@ -2,6 +2,12 @@
 
 {% block content %}
   <h1>Book List</h1>
+
+  <form method = "GET" action="{% url 'books' %}">
+    <input type="text" name="q" placeholder="Search by title..." value="{{ query }}">
+    <button type="submit">Search</button>
+  </form>
+
   {% if book_list %}
     <ul>
       {% for book in book_list %}
